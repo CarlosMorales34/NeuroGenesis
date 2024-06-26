@@ -1,0 +1,166 @@
+:root {
+    /* Color de fondo principal */
+    --color-background: #ECF0F1; /* Utiliza el color gris claro como fondo principal */
+    /* Colores principales */
+    --color-primary: #2C3E50; /* Azul oscuro elegante para textos principales y elementos de alto contraste */
+    --color-secondary: #ECF0F1; /* Gris claro para fondos y áreas de lectura */
+    
+    /* Colores de contraste y acento */
+    --color-accent: #3498DB; /* Azul claro para botones y elementos de contraste */
+    --color-accent-light: #E74C3C; /* Rojo anaranjado brillante para elementos de contraste más claros */
+    
+    /* Colores adicionales */
+    --color-info: #2ECC71; /* Verde esmeralda para secciones informativas */
+    --color-warning: #F39C12; /* Amarillo dorado para avisos o advertencias */
+    --color-error: #E67E22; /* Naranja oscuro para errores o alertas críticas */
+    
+    /* Colores de texto */
+    --color-text-primary: #FFFFFF; /* Blanco para textos principales sobre fondos oscuros */
+    --color-text-secondary: #7F8C8D; /* Gris medio para textos secundarios */
+    --color-text-light: #BDC3C7; /* Gris claro para textos menos importantes */
+    
+    /* Colores de hover */
+    --color-hover: #1ABC9C; /* Verde esmeralda más oscuro para efectos de hover */
+    --color-hover-btn: #2980B9; /* Azul claro más oscuro para botones al hacer hover */
+}
+a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: Roboto;
+}
+body{
+    font-size: 1.6rem;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+}
+ .main__container{
+    display: flex;
+    flex-direction: row;
+}
+.container__left{
+    flex-basis: 70%;
+}
+.container__intro{
+    margin-bottom: 2rem;
+}
+.h1{
+    font-size: 5rem;
+    color: var(--color-primary);
+}
+.texto__intro{
+    font-size: 2rem;
+    color: var( --color-primary);
+    margin-bottom: 1rem;
+}
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    height: 4rem;
+    border: 2px solid var(--color-text-light);
+    border-radius: 10px;
+    background-color: var(--color-text-light);
+    opacity: .7;
+    transition: all 300ms ease-in-out;
+}
+.badge:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.container__gallery{
+    display: flex;
+    margin: 4rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container__imgLeft{
+    flex-basis: 50%;
+
+}
+.img__item1{
+    width: 100%;
+    height: 100%;
+}
+.container__imgRight{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+.img__item2{
+    flex-basis: 50%;
+}
+.img__item3{
+    flex-basis: 50%;
+
+}
+.img__item4{
+    flex-basis: 50%;
+}
+.img__item5{
+    flex-basis: 50%;
+}
+.img__item2 img, .img__item3 img, .img__item4 img, .img__item5 img{
+    width: 100%;
+    height: 100%;
+    transition: transform 100ms ease-in-out;
+}
+.img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.texto__gallery{
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+.subtitle, .container__text h2, .title_conversacion{
+    font-size: 3rem;
+}
+.tags__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem 0;
+} 
+.tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    min-width: 13rem;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: var(--color-text-secondary);
+    color: var(--color-primary);
+}
+.container__text{
+    margin-bottom: 2rem;
+}
+.container__text p{
+    font-size: 2.5rem;
+}
+.container__conversacion{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+.comenzar__conversacion{
+    border: 10px;
+    overflow: hidden;
+    background-color: var(--color-text-light);
+}
+.title_conversacion{
+    margin: 1rem 0;
+}
+
+.container_right{
+    flex-basis: 30%;
+} 
