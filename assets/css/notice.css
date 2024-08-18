@@ -160,7 +160,62 @@ body{
 .title_conversacion{
     margin: 1rem 0;
 }
-
+.container_cards{
+    display: flex;
+    width: 100%;
+    margin: 1.5rem 0;
+    border-radius: 15px;
+    transition: transform 200ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+.container_cards:hover {
+    transform: translateY(-5%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card_text__left{
+    flex-basis: 70%;
+    padding: 1rem;
+}
+.card_text--tag{
+    color: var(--color-text-secondary);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.card_text--titulo{
+    color: var(--color-primary);
+}
+.card_text__right{
+    flex-basis: 30%;
+    margin: 1rem;
+    border-radius: 15px;
+}
+.card_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .container_right{
     flex-basis: 30%;
-} 
+    padding: 1rem;
+}
+.cards{
+    display: flex;
+    width: 100%;
+    margin: 1.5rem 0;
+    border-radius: 15px;
+    transition: transform 200ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+.cards:hover {
+    transform: translateY(-5%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.cards__text{
+    flex-basis: 70%;
+    padding: 1rem;
+}
+

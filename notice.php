@@ -63,19 +63,35 @@
             </div>
 
             <h2 class="subtitle">Mas informacion</h2>
-            <div class="container_cards"></div>
-            <div class="container_cards"></div>
-            <div class="container_cards"></div>
-            <div class="container_cards"></div>
+
+            <div class="container_cards">
+                <div class="card_text__left">
+                    <p class="card_text--tag" >tag</p>
+                    <h1 class="card_text--titulo">Titulo</h1>
+                    <p class="card_text--des">descripcion</p>
+                    <button class="btn__noticie">Leer</button>
+                </div>
+                <div class="card_text__right">
+                    <div class="card_img">
+                        <img src="./assets/img/image.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container_right">
+            <h1>Noticias actuales</h1>
             <div class="cards">
-                <div class="container__text">
-                    texto
+                <div class="cards__text">
+                    <h2>Titulo</h2>
+                    <p>descripcion</p>
                 </div>
-                <div class="container__img">
-                    img
+
+                <div class="cards__container--img">
+                    <div class="cards_img">
+                       <!-- <img src="./assets/img/image.png" alt=""> -->
+                    </div>
                 </div>
+
             </div>
         </div>
     </main>
